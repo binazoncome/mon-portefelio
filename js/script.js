@@ -222,9 +222,11 @@ formulaire.addEventListener("submit", function (event) {
 document.querySelectorAll(
     "#contact-form input, #contact-form textarea"
 ).forEach(function (champ) {
-
     champ.addEventListener("input", function () {
         supprimerErreur(champ);
     });
 
 });
+<p id="messageConfirmation" style="display: none;">
+    Votre message a été envoyé avec succès !
+</p>
